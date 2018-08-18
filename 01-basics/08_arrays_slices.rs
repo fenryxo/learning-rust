@@ -27,6 +27,18 @@ fn main() {
     // Safe unwrap with fallback value:
     let fifth_value = * fifth.unwrap_or(&-1);
     println!("Fifth: {}", fifth_value);
+
+    // Other methods
+    println!("Empty?: {:?}", slice.is_empty());
+    println!("First?: {:?}", slice.first());
+    println!("Split first?: {:?}", slice.split_first());
+    println!("Last?: {:?}", slice.last());
+    println!("Split last?: {:?}", slice.split_last());
+
+    // Chunks
+    for item in slice.chunks(2) {
+        println!("Chunks(2): {:?}", item);
+    }
 }
 
 
