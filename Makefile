@@ -12,3 +12,6 @@ clean:
 
 push: clean all
 	git push
+
+open-doc:
+	./doc.sh
