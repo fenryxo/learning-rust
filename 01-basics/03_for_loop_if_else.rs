@@ -9,4 +9,9 @@ fn main() {
         let even_odd = if i % 2 == 0 { "even" } else { "odd" };
         println!("Hello {} {}!", even_odd, i);
     }
+
+    // Inclusive - 5 will be printed as well
+    for i in 0..=5 {
+        println!("Hello {}!", i);
+    }
 }
